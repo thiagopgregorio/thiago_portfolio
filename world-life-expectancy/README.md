@@ -4,7 +4,26 @@
 Analyze global life expectancy data to understand how longevity has evolved over time and identify key factors associated with higher life expectancy across countries.
 
 ## Dataset
-- Source: (add link here)
+- Source: Dataset provided as a CSV file (source not specified)
+- Description: Global dataset containing health and socioeconomic indicators by country and year
+
+### Features
+- Country  
+- Year  
+- Status (Developed / Developing)  
+- Life expectancy  
+- Adult Mortality  
+- Infant deaths  
+- Under-five deaths  
+- BMI  
+- Measles  
+- Polio  
+- Diphtheria  
+- HIV/AIDS  
+- GDP  
+- Schooling  
+- Thinness (1–19 years and 5–9 years)  
+- Percentage expenditure  
 
 ## Data Cleaning
 The dataset required multiple preprocessing steps to ensure data quality and consistency:
