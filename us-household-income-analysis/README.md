@@ -1,7 +1,13 @@
 # US Household Income Analysis
 
 ## Objective
-Analyze household income data across U.S. regions to identify patterns, regional disparities, and key socioeconomic insights.
+This project analyzes household income distribution across U.S. regions, with the goal of identifying regional disparities and uncovering how geographic and structural factors influence income levels.
+
+## Key Insights
+- Puerto Rico consistently ranks as the lowest-income region, significantly below all U.S. states  
+- Median income is more reliable than mean due to the presence of outliers  
+- "Community" regions show lower income levels, but this is driven by geographic concentration (Puerto Rico), not by the category itself  
+- There are strong regional disparities in income across states  
 
 ## Dataset
 - Source: Dataset provided as CSV files (source not specified)
@@ -33,7 +39,6 @@ Contains income-related metrics:
 
 Both tables are joined using the `id` column.
 
----
 
 ## Data Cleaning
 The dataset required several preprocessing steps to ensure data quality:
@@ -45,37 +50,22 @@ The dataset required several preprocessing steps to ensure data quality:
 - Validated geographic inconsistencies (city/place mismatches)
 - Ensured consistency across both tables
 
----
 
-## Exploratory Data Analysis (EDA)
-The analysis focused on understanding income distribution and regional differences:
+## Analysis Approach
+- Income distribution by state (mean vs median)
+- Comparison across region types
+- Identification of anomalies and outliers
+- Evaluation of geographic influence on income patterns
 
-- Income distribution by state (mean vs. median)
-- Comparison between different region types (Type)
-- Geographic patterns in income levels
-- Identification of outliers and anomalies
-- Analysis of land and water area distribution by state
 
----
-
-## Key Insights
-- Puerto Rico has significantly lower income levels compared to U.S. states  
-- Median income is more reliable than mean due to the presence of outliers  
-- "Community" regions show lower income levels, but this is driven by geographic concentration (Puerto Rico), not by the category itself  
-- There are strong regional disparities in income across states  
-
----
-
-## Analytical Considerations
-- Mean income can be distorted by extreme values (outliers)  
-- Median provides a more robust measure of central tendency  
-- Geographic concentration can bias categorical analysis (e.g., "Community")  
-
----
-
-## 🛠 Tools Used
+## Tools Used
 - SQL (Joins, Window Functions, Aggregations)
+
 
 ## Project Structure
 - sql/01_data_cleaning.sql  
 - sql/02_eda.sql
+
+
+For a more detailed walkthrough and full storytelling of the analysis:
+https://thiagopgregorio.wixsite.com/thiago-gregorio-port/post/from-raw-data-to-insights-us-household-income-analysis
